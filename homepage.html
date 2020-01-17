@@ -1,64 +1,72 @@
-<!doctype html>
-
-<html lang = "en">
-
-	<head>
-		<meta charset = "utf-8">
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
 	<title>
 		BreadBasket.co.in
 	</title>
-           <audio src="homepageBGS.mp3" autoplay loop></audio>
+	<link rel="stylesheet" type="text/css" href="homepage.css">
+</head>
+<body >
+<div class="background">
+		<img src="homepageBG.jpg" width="100%" height="1000%">
+    <div class="layer">
+    </div>
+</div>
+<div class="layer2" ></div>
 
-	</head>
+<div id="top">
+	<a href="login.html" id="navigation">Existing-User</a>
+	<a href="aboutus.html" id="navigation">About-Us</a>
+	<a href="homepage.html" id="navigation">Home</a>
 
-	<body background = "homepageBG.jpg" style = "background-repeat:no-repeat;background-size:cover;">
-      		<marquee><font color="#DB4437"><strong><h3>Welcome To BreadBasket.co.in</h3></strong></font></marquee>
+ </div>
+ <div id="logo">
+     <img src="logo.png" width="70%">
+
+ </div>
+
+<div class="form0">
+	<img src = "basket.jpg" style="border-radius: 1000%;" width="100px" >
+</div>
+
+<div class="form00">
+	<img src = "newUserdiscount.png" style="border-radius: 1000%;transform: rotate(80deg);" width="100px" >
+	
+</div>
+<div style="position: fixed; left: 92%; top: 22%;transform: rotate(41deg); ">
+	<p style="color: gold; font-size:15px ; ">50% off <br>
+			for<br>New Users </p>
+	</div>
+<form>
+<div id="form1">
+	<pre>
+Name 		:
+Address 	:
+E-Mail		:	
+Mobile		:
+Password	:
+confirm-Password:
+	</pre>
+</div>	
 
 
-		<form method="post" style = "widht : 70% ; float :right;">
-			<fieldset style="background-color : #FFC600" >
-				<legend> <strong>Valuable Customer</strong> </legend>
-       		 		<p align = "right">
-				<lable for="email">Customer I.D.</lable>
-							<input type="email" name="email" placeholder="xyz@abc.com"  align  = "right" required>
-				<lable for="password">Password</lable>
-        						<input type="password" name="pswd" placeholder="Enter the password " maxlength= "6"  align  = "right" required></br></br>
-             		 	<a href="forgotpassword.html">Forgot password/username ?</a>
-							<input type = "submit" name="submit" value = "Let's Shop!">
+<div id="form2">
+	<input type="text" class="border" placeholder="Full Name" name="cstname" required>
 
-				</p>
-			</fieldset>
-		</form>
-			
-			<iframe width="300" height="200" 
-			<video muted autoplay source src="C:\Users\Del\Desktop\HTML development\playback.mp4" type="video/mp4" >   </video>
-			</iframe>
-                                 <br>
-									
-		<form method="post" style = " float :right;">
-			<fieldset style="background-color:#22C4F3">
-			<legend><b>New Customer</b></legend>
-			<p align="right">
-				<b>Name </b> <input type="text" name="name" placeholder="Full name" required> <br><br>
-				<b>Email </b> <input type="email" name="email" placeholder="Email Id" required><br><br>
-				<b>Mobile No.</b> <input type="tel" name="mob" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
-				<b>Password </b> <input type="password" name="password" placeholder="Password" maxlength="6" required><br><br>
-				<b>Confirm Password </b> <input type="password" name="password" placeholder="Password" maxlength="6" required><br><br>
-				<input type="submit" name="submit" value="Register"> &nbsp; <input type="reset" value="Reset">
-			</p>
-			</fieldset>
-		</form>
+	<textarea class="border" placeholder="Full Address" style="width: 167px;margin-top: 5px; " required></textarea>
 
-		<footer style="position :fixed;width: 100% ; bottom: 0; float : center;">
-				<center>
-                                        <p style = "border: 5px solid red;" >
- 		 			<b>Contact information: <a href="mailto:someone@example.com">someone@example.com</a></b><br>
-          				<b>Address:SSPDL Alpha City IT Park Navalur,chennai.</b><br>
-          				<b>Contact Number : 9876543210,9987567854</b><br>
-</p>
-		          		<marquee><label> <b><h3> Thanks for Visiting BreadBasket</h3> </b> </label></marquee>
-					<font color = "red" border  = "white" ><b>Created by:BreadBasket Team</b></font>
-         			</center>
-         	</footer>
-	</body>
+	<input type="E-Mail" class="border" placeholder="xyz@abc.com" name="email" style="margin-top: 5px;" required>
+	<input type="Mobile"  placeholder="xxx-xxx-xxxx" maxlength="10" name="mobile" class="border" style="margin-top:15px; " required>
+	<input type="Password" maxlength="8" placeholder="Enter the password" name="password" class="border" style="margin-top: 15px;" required>
+	<input type="password" maxlength="8" placeholder="Re-enter the password" class="border" name="confirmpassword" style="margin-top:15px; " required>
+
+</div>
+<div id="form3">
+ <input type="submit" id="submit" value="submit" name="submit">
+ <input type="reset" id="reset" value="reset" name="reset">
+</div>
+
+</form>
+</body>
 </html>
